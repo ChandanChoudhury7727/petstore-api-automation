@@ -1,0 +1,63 @@
+id: update-created-pet
+
+info:
+  name: Update Created Pet
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/pet"
+
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Accept
+      value: application/json
+
+  body:
+    type: json
+    data: |-
+      {
+        "id": {{petId}},
+        "category": {
+          "id": 1,
+          "name": "automation"
+        },
+        "name": "Bruno_Updated_Pet",
+        "photoUrls": [
+          "https://example.com/updated-pet.jpg"
+        ],
+        "tags": [
+          {
+            "id": 1,
+            "name": "automation"
+          }
+        ],
+        "status": "sold"
+      }
+
+runtime:
+  scripts:
+    - type: tests
+      code: |-
+        test("Response status should be 200", function() {
+          expect(res.status).to.equal(200);
+        });
+
+        test("Response should contain pet id", function() {
+          expect(res.body).to.have.property("id");
+        });
+
+        test("Response should contain updated pet name", function() {
+          expect(res.body.name).to.equal("Bruno_Updated_Pet");
+        });
+
+        test("Response should contain updated status", function() {
+          expect(res.body.status).to.equal("sold");
+        });
+
+settings:
+  encodeUrl: true
+  timeout: 15000
+  followRedirects: true

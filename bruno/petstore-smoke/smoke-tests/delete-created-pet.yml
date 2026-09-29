@@ -1,0 +1,35 @@
+id: delete-created-pet
+
+info:
+  name: Delete Created Pet
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/pet/{{petId}}"
+
+  headers:
+    - name: Accept
+      value: application/json
+
+runtime:
+  scripts:
+    - type: tests
+      code: |-
+        test("Response status should be 200", function() {
+          expect(res.status).to.equal(200);
+        });
+
+        test("Response should contain success code", function() {
+          expect(res.body).to.have.property("code");
+        });
+
+        test("Response code should be 200", function() {
+          expect(res.body.code).to.equal(200);
+        });
+
+settings:
+  encodeUrl: true
+  timeout: 15000
+  followRedirects: true

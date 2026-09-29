@@ -1,0 +1,35 @@
+id: verify-pet-deleted
+
+info:
+  name: Verify Pet Deleted
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{baseUrl}}/pet/{{petId}}"
+
+  headers:
+    - name: Accept
+      value: application/json
+
+runtime:
+  scripts:
+    - type: tests
+      code: |-
+        test("Response status should be 404", function() {
+          expect(res.status).to.equal(404);
+        });
+
+        test("Response should contain error code", function() {
+          expect(res.body).to.have.property("code");
+        });
+
+        test("Response error code should be 1", function() {
+          expect(res.body.code).to.equal(1);
+        });
+
+settings:
+  encodeUrl: true
+  timeout: 15000
+  followRedirects: true

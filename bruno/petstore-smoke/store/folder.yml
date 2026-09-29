@@ -1,0 +1,10 @@
+info:
+  name: store
+  type: folder
+
+request:
+  auth: inherit
+
+docs:
+  content: Access to Petstore orders
+  type: text/markdown

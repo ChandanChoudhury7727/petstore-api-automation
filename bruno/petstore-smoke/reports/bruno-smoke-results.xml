@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="Find Available Pets" file="smoke-tests\find-available-pets.yml" errors="0" failures="0" skipped="0" tests="2" timestamp="2026-09-29T11:11:10.795" hostname="CHANDAN" time="2.199">
+    <testcase name="Response status should be 200" status="pass" classname="smoke-tests\find-available-pets" time="1.099"/>
+    <testcase name="Response body should be an array" status="pass" classname="smoke-tests\find-available-pets" time="1.099"/>
+  </testsuite>
+  <testsuite name="Create Pet" file="smoke-tests\create-pet.yml" errors="0" failures="0" skipped="0" tests="3" timestamp="2026-09-29T11:11:10.796" hostname="CHANDAN" time="2.025">
+    <testcase name="Response status should be 200" status="pass" classname="smoke-tests\create-pet" time="0.675"/>
+    <testcase name="Response should contain pet id" status="pass" classname="smoke-tests\create-pet" time="0.675"/>
+    <testcase name="Response should contain pet name" status="pass" classname="smoke-tests\create-pet" time="0.675"/>
+  </testsuite>
+  <testsuite name="Get Created Pet" file="smoke-tests\get-created-pet.yml" errors="0" failures="0" skipped="0" tests="4" timestamp="2026-09-29T11:11:10.796" hostname="CHANDAN" time="1.795">
+    <testcase name="Response status should be 200" status="pass" classname="smoke-tests\get-created-pet" time="0.449"/>
+    <testcase name="Response should contain pet id" status="pass" classname="smoke-tests\get-created-pet" time="0.449"/>
+    <testcase name="Response should contain pet name" status="pass" classname="smoke-tests\get-created-pet" time="0.449"/>
+    <testcase name="Response should contain expected pet name" status="pass" classname="smoke-tests\get-created-pet" time="0.449"/>
+  </testsuite>
+  <testsuite name="Update Created Pet" file="smoke-tests\update-created-pet.yml" errors="0" failures="0" skipped="0" tests="4" timestamp="2026-09-29T11:11:10.796" hostname="CHANDAN" time="1.766">
+    <testcase name="Response status should be 200" status="pass" classname="smoke-tests\update-created-pet" time="0.441"/>
+    <testcase name="Response should contain pet id" status="pass" classname="smoke-tests\update-created-pet" time="0.441"/>
+    <testcase name="Response should contain updated pet name" status="pass" classname="smoke-tests\update-created-pet" time="0.441"/>
+    <testcase name="Response should contain updated status" status="pass" classname="smoke-tests\update-created-pet" time="0.441"/>
+  </testsuite>
+  <testsuite name="Delete Created Pet" file="smoke-tests\delete-created-pet.yml" errors="0" failures="0" skipped="0" tests="3" timestamp="2026-09-29T11:11:10.796" hostname="CHANDAN" time="1.570">
+    <testcase name="Response status should be 200" status="pass" classname="smoke-tests\delete-created-pet" time="0.523"/>
+    <testcase name="Response should contain success code" status="pass" classname="smoke-tests\delete-created-pet" time="0.523"/>
+    <testcase name="Response code should be 200" status="pass" classname="smoke-tests\delete-created-pet" time="0.523"/>
+  </testsuite>
+  <testsuite name="Verify Pet Deleted" file="smoke-tests\verify-pet-deleted.yml" errors="0" failures="0" skipped="0" tests="3" timestamp="2026-09-29T11:11:10.796" hostname="CHANDAN" time="1.615">
+    <testcase name="Response status should be 404" status="pass" classname="smoke-tests\verify-pet-deleted" time="0.538"/>
+    <testcase name="Response should contain error code" status="pass" classname="smoke-tests\verify-pet-deleted" time="0.538"/>
+    <testcase name="Response error code should be 1" status="pass" classname="smoke-tests\verify-pet-deleted" time="0.538"/>
+  </testsuite>
+</testsuites>
