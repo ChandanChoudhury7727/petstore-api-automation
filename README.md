@@ -1,6 +1,3 @@
-Absolutely. Below is a **professional, GitHub-ready README** tailored to the project we've actually built. You can copy-paste the entire thing into your `README.md`.
-
-````markdown
 # Petstore API Automation Framework
 
 A portfolio-grade API automation framework built using **Python, Pytest, Bruno, Allure, OpenAPI Schema Validation, and Hugging Face AI**.
@@ -52,13 +49,13 @@ The framework provides:
 
 **Swagger Petstore API**
 
-Base URL:
+### Base URL
 
 ```text
 https://petstore.swagger.io/v2
-````
+```
 
-OpenAPI specification:
+### OpenAPI Specification
 
 ```text
 https://petstore.swagger.io/v2/swagger.json
@@ -183,13 +180,13 @@ The same concept is also implemented in the Bruno smoke-test collection.
 
 The framework validates successful API operations such as:
 
-* Create Pet
-* Get Pet
-* Update Pet
-* Delete Pet
-* Find Pets by status
-* Find Pets by tags
-* Upload Pet image
+- Create Pet
+- Get Pet
+- Update Pet
+- Delete Pet
+- Find Pets by status
+- Find Pets by tags
+- Upload Pet image
 
 ---
 
@@ -199,10 +196,10 @@ Negative scenarios are included to validate API behavior when invalid or unexpec
 
 Examples include:
 
-* Invalid Pet ID
-* Non-existent Pet
-* Invalid request scenarios
-* Expected HTTP error responses
+- Invalid Pet ID
+- Non-existent Pet
+- Invalid request scenarios
+- Expected HTTP error responses
 
 ---
 
@@ -329,61 +326,101 @@ Allure is used to generate detailed test execution reports.
 
 The report contains:
 
-* Test results
-* Test status
-* Bruno execution output
-* Bruno JUnit report
-* API test information
-* AI analysis information
-* Execution details
+- Test results
+- Test status
+- Bruno execution output
+- Bruno JUnit report
+- API test information
+- AI analysis information
+- Execution details
 
-Generate an Allure report using:
+### Generate an Allure Report
 
 ```powershell
 allure generate allure-results -o allure-report
 ```
 
-Open the generated report:
+### Open the Allure Report
 
 ```powershell
 allure open allure-report
 ```
 
 ---
-Screenshots of the Allure report:
-**Overview**
-<img width="588" height="690" alt="image" src="https://github.com/user-attachments/assets/09efe51b-141b-4fa3-aa56-20c78d64900b" />
-<img width="575" height="405" alt="image" src="https://github.com/user-attachments/assets/dd683e67-c92e-4a14-a856-67563ce0a427" />
 
+## 📸 Allure Report Screenshots
 
-**Test Pet CURD lifecycle**
-<img width="580" height="801" alt="image" src="https://github.com/user-attachments/assets/93dad0b0-848b-4014-b648-9d3577dcd2b3" />
-<img width="567" height="665" alt="image" src="https://github.com/user-attachments/assets/44943db7-00df-4c5b-b0e0-e7b03ed3810d" />
-<img width="585" height="907" alt="image" src="https://github.com/user-attachments/assets/901f089e-0cef-4f95-ba74-9588d815c1a5" />
+The following screenshots demonstrate the execution results and different areas of the Allure report.
 
+---
 
+### 1. Allure Report Overview
 
-**Test Valid Pet Matches Schema**
-<img width="585" height="627" alt="image" src="https://github.com/user-attachments/assets/2bf29dc5-5520-4496-ba2d-2cd057a93599" />
-<img width="590" height="715" alt="image" src="https://github.com/user-attachments/assets/de7f726b-45a0-410b-9633-ea1647b01d9b" />
+The Allure overview provides a high-level summary of the test execution.
 
+![Allure Report Overview 1](https://github.com/user-attachments/assets/09efe51b-141b-4fa3-aa56-20c78d64900b)
 
-**Upload Pet Image**
-<img width="585" height="887" alt="image" src="https://github.com/user-attachments/assets/225cd43d-ef98-4d55-809d-c70c99a58c8e" />
+![Allure Report Overview 2](https://github.com/user-attachments/assets/dd683e67-c92e-4a14-a856-67563ce0a427)
 
+---
 
-**Teat AI Quality** 
-<img width="582" height="767" alt="image" src="https://github.com/user-attachments/assets/95633400-4e82-44da-ba88-ee815c1552f4" />
-<img width="580" height="803" alt="image" src="https://github.com/user-attachments/assets/7c10a1e3-803c-4a51-8e6b-8d1fb72f9635" />
+### 2. Pet CRUD Lifecycle Test
 
+The following screenshots demonstrate the execution and detailed results of the Pet CRUD lifecycle test.
 
-**Test Bruno Smoke collection**
-<img width="588" height="758" alt="image" src="https://github.com/user-attachments/assets/6bffd9e8-aa48-472b-b050-8b3ca5d30757" />
-<img width="590" height="762" alt="image" src="https://github.com/user-attachments/assets/9258b360-b9db-4dc7-9561-f5a9180d1824" />
+![Pet CRUD Lifecycle 1](https://github.com/user-attachments/assets/93dad0b0-848b-4014-b648-9d3577dcd2b3)
 
+![Pet CRUD Lifecycle 2](https://github.com/user-attachments/assets/44943db7-00df-4c5b-b0e0-e7b03ed3810d)
 
-**Negative Test**
-<img width="582" height="926" alt="image" src="https://github.com/user-attachments/assets/9927bfa6-22b9-47a8-a3a8-a1aba5f77598" />
+![Pet CRUD Lifecycle 3](https://github.com/user-attachments/assets/901f089e-0cef-4f95-ba74-9588d815c1a5)
+
+---
+
+### 3. Pet Schema Validation
+
+The following screenshots demonstrate the validation of the Pet API response against the expected OpenAPI schema.
+
+![Pet Schema Validation 1](https://github.com/user-attachments/assets/2bf29dc5-5520-4496-ba2d-2cd057a93599)
+
+![Pet Schema Validation 2](https://github.com/user-attachments/assets/de7f726b-45a0-410b-9633-ea1647b01d9b)
+
+---
+
+### 4. Pet Image Upload Test
+
+The following screenshot demonstrates the automated Pet image upload test.
+
+![Pet Image Upload](https://github.com/user-attachments/assets/225cd43d-ef98-4d55-809d-c70c99a58c8e)
+
+---
+
+### 5. AI Quality Test
+
+The following screenshots demonstrate the AI-assisted API response analysis and quality validation.
+
+![AI Quality Test 1](https://github.com/user-attachments/assets/95633400-4e82-44da-ba88-ee815c1552f4)
+
+![AI Quality Test 2](https://github.com/user-attachments/assets/7c10a1e3-803c-4a51-8e6b-8d1fb72f9635)
+
+---
+
+### 6. Bruno Smoke Collection Test
+
+The following screenshots demonstrate the execution of the Bruno smoke collection through the Pytest framework.
+
+![Bruno Smoke Collection 1](https://github.com/user-attachments/assets/6bffd9e8-aa48-472b-b050-8b3ca5d30757)
+
+![Bruno Smoke Collection 2](https://github.com/user-attachments/assets/9258b360-b9db-4dc7-9561-f5a9180d1824)
+
+---
+
+### 7. Negative Test
+
+The following screenshot demonstrates the execution of a negative API test scenario.
+
+![Negative API Test](https://github.com/user-attachments/assets/9927bfa6-22b9-47a8-a3a8-a1aba5f77598)
+
+---
 
 # 📝 Logging
 
@@ -397,13 +434,13 @@ logs/test_execution.log
 
 The API client captures information such as:
 
-* HTTP method
-* Request URL
-* Request body
-* Response status
-* Response body
-* Response timing
-* Request/response history
+- HTTP method
+- Request URL
+- Request body
+- Response status
+- Response body
+- Response timing
+- Request/response history
 
 ---
 
@@ -425,7 +462,7 @@ cd petstore-api-automation
 
 ## 2. Create a Virtual Environment
 
-Windows:
+### Windows
 
 ```powershell
 python -m venv .venv
@@ -449,25 +486,25 @@ pip install -r requirements.txt
 
 # 🧪 Running Tests
 
-Run the complete Pytest suite:
+## Run the Complete Pytest Suite
 
 ```powershell
 pytest -v
 ```
 
-Generate Allure results:
+## Generate Allure Results
 
 ```powershell
 pytest -v --alluredir=allure-results
 ```
 
-Generate the Allure report:
+## Generate the Allure Report
 
 ```powershell
 allure generate allure-results -o allure-report
 ```
 
-Open the report:
+## Open the Allure Report
 
 ```powershell
 allure open allure-report
@@ -555,10 +592,10 @@ Centralized configuration avoids unnecessary hard-coding throughout the test fra
              │                          │
              └────────────┬─────────────┘
                           ▼
-                 ┌────────────────┐
+                 ┌─────────────────┐
                  │ Swagger Petstore│
                  │      API        │
-                 └────────┬───────┘
+                 └────────┬────────┘
                           │
               ┌───────────┼───────────┐
               ▼           ▼           ▼
@@ -598,14 +635,14 @@ This provides both deterministic automation and additional AI-assisted analysis.
 
 The main objectives of this project are:
 
-* Build a reusable API automation framework.
-* Automate REST API functional testing.
-* Reduce hard-coded test dependencies.
-* Validate API contracts using OpenAPI schemas.
-* Integrate AI-assisted API response analysis.
-* Demonstrate Bruno collection-based API testing.
-* Integrate multiple testing approaches into a single framework.
-* Generate detailed and traceable test reports.
+- Build a reusable API automation framework.
+- Automate REST API functional testing.
+- Reduce hard-coded test dependencies.
+- Validate API contracts using OpenAPI schemas.
+- Integrate AI-assisted API response analysis.
+- Demonstrate Bruno collection-based API testing.
+- Integrate multiple testing approaches into a single framework.
+- Generate detailed and traceable test reports.
 
 ---
 
@@ -615,29 +652,27 @@ The main objectives of this project are:
 
 GitHub:
 
-[https://github.com/ChandanChoudhury7727](https://github.com/ChandanChoudhury7727)
+https://github.com/ChandanChoudhury7727
 
 ---
 
+# 📌 Project Status
 
+**Status: Completed**
 
 The project currently includes:
 
-* ✅ Pytest API automation
-* ✅ Dynamic test data
-* ✅ CRUD testing
-* ✅ Negative testing
-* ✅ File upload testing
-* ✅ OpenAPI schema validation
-* ✅ Hugging Face AI integration
-* ✅ Bruno API collection
-* ✅ Dynamic Bruno CRUD testing
-* ✅ Pytest + Bruno integration
-* ✅ JUnit reporting
-* ✅ Allure reporting
-* ✅ Centralized logging
-* ✅ Git/GitHub version control
-
-````
-
-
+- ✅ Pytest API automation
+- ✅ Dynamic test data
+- ✅ CRUD testing
+- ✅ Negative testing
+- ✅ File upload testing
+- ✅ OpenAPI schema validation
+- ✅ Hugging Face AI integration
+- ✅ Bruno API collection
+- ✅ Dynamic Bruno CRUD testing
+- ✅ Pytest + Bruno integration
+- ✅ JUnit reporting
+- ✅ Allure reporting
+- ✅ Centralized logging
+- ✅ Git/GitHub version control
