@@ -350,6 +350,33 @@ allure open allure-report
 ```
 
 ---
+Screenshots of the Allure report:
+Overview
+<img width="588" height="690" alt="image" src="https://github.com/user-attachments/assets/09efe51b-141b-4fa3-aa56-20c78d64900b" />
+<img width="575" height="405" alt="image" src="https://github.com/user-attachments/assets/dd683e67-c92e-4a14-a856-67563ce0a427" />
+
+Test Pet CURD lifecycle
+<img width="580" height="801" alt="image" src="https://github.com/user-attachments/assets/93dad0b0-848b-4014-b648-9d3577dcd2b3" />
+<img width="567" height="665" alt="image" src="https://github.com/user-attachments/assets/44943db7-00df-4c5b-b0e0-e7b03ed3810d" />
+<img width="585" height="907" alt="image" src="https://github.com/user-attachments/assets/901f089e-0cef-4f95-ba74-9588d815c1a5" />
+
+Test Valid Pet Matches Schema
+<img width="585" height="627" alt="image" src="https://github.com/user-attachments/assets/2bf29dc5-5520-4496-ba2d-2cd057a93599" />
+<img width="590" height="715" alt="image" src="https://github.com/user-attachments/assets/de7f726b-45a0-410b-9633-ea1647b01d9b" />
+
+Upload Pet Image
+<img width="585" height="887" alt="image" src="https://github.com/user-attachments/assets/225cd43d-ef98-4d55-809d-c70c99a58c8e" />
+
+Teat AI Quality 
+<img width="582" height="767" alt="image" src="https://github.com/user-attachments/assets/95633400-4e82-44da-ba88-ee815c1552f4" />
+<img width="580" height="803" alt="image" src="https://github.com/user-attachments/assets/7c10a1e3-803c-4a51-8e6b-8d1fb72f9635" />
+
+Test Bruno Smoke collection
+<img width="588" height="758" alt="image" src="https://github.com/user-attachments/assets/6bffd9e8-aa48-472b-b050-8b3ca5d30757" />
+<img width="590" height="762" alt="image" src="https://github.com/user-attachments/assets/9258b360-b9db-4dc7-9561-f5a9180d1824" />
+
+Negative Test
+<img width="582" height="926" alt="image" src="https://github.com/user-attachments/assets/9927bfa6-22b9-47a8-a3a8-a1aba5f77598" />
 
 # 📝 Logging
 
